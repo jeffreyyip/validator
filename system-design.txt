@@ -1,0 +1,32 @@
+The system is built using spring boot framework and java 8
+It is package using Maven and tested in Mac OS
+
+Packaging
+===========
+Maven file: pom.xml
+
+Library dependency
+====================
+spring mvc
+
+
+Config
+===========
+the config file is in the src files and named as:
+src/main/resources/application.properties
+It contains variable for server port and 3rd party API information
+
+Log
+===========
+The log configuration is in the src files as:
+src/main/resources/logback-spring.xml
+
+There are 2 log files in /logs directory
+validator-server.log : it contains logs from all the modules excepted 3rd party API call
+validator-numVer.log : it contains logs for 3rd party API call for "numverify"
+
+There is console logs for all modules.
+
+Docker
+==========
+file name: Dockerfile
