@@ -7,12 +7,14 @@ HOW TO BUILD
 ==============
 it is built using maven, the output jar file will be output to target directory
 command:
-./mvnw clean package
+
+mvn clean package
 
 
 HOW TO RUN
 =============
 command:
+
 java -jar target/validator-0.0.1-SNAPSHOT.jar
 
 
@@ -22,16 +24,20 @@ if it is run in containerized environment, please build with maven and run as be
 
 
 command to build:
-./mvnw install dockerfile:build
+
+mvn install dockerfile:build
 
 command to run as below, e.g. server run in port 8080 and docker image tagged as com.jy/validator:
+
 docker run -p 8080:8080 -t com.jy/validator
 
 command to stop:
 To get container id, run:
+
 docker ps
 
 To stop the container, e.g. id : 81c723d22865, run:
+
 docker stop 81c723d22865
 
 
